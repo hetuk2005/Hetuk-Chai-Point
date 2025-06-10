@@ -120,7 +120,7 @@ span > p:hover {
   color: #ec6532;
   top: 170px;
   font-size: 110px;
-  letter-spacing: 0.1px;
+  letter-spacing: 1px;
   font-weight: bold;
   font-family: "Cedarville Cursive", cursive;
 }
@@ -129,9 +129,9 @@ span > p:hover {
   text-align: center;
   position: absolute;
   right: 140px;
-  top: 110px;
+  top: 130px;
   font-size: 87px;
-  letter-spacing: 0.1px;
+  letter-spacing: 1px;
   font-weight: bold;
 }
 
@@ -141,11 +141,231 @@ span > p:hover {
   color: #fff;
   position: absolute;
   right: 180px;
-  letter-spacing: 0.1px;
-  bottom: 170px;
+  letter-spacing: 1px;
+  bottom: 145px;
   border-radius: 51px;
   height: 90px;
   width: 300px;
-  font-size: 40px;
+  font-size: 37px;
   font-weight: bold;
+  text-transform: uppercase;
+}
+
+.banner > button:hover {
+  bottom: 135px;
+  scale: 1.1;
+  box-shadow: 0 0px 10px black;
+  background-color: black;
+  color: #fff;
+}
+
+.banner > button:hover::before {
+  scale: 3;
+}
+
+.banner > button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 90px;
+  height: 30px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: blue;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  color: whitesmoke;
+  background-color: black;
+  list-style: none;
+  padding: 10px 0;
+  top: 95%;
+  right: 450px;
+  min-width: auto;
+  z-index: 1;
+  border: 1px transparent;
+  height: auto;
+}
+
+.list ul li:hover .dropdown {
+  display: block;
+}
+
+.dropdown li {
+  font-weight: 600;
+  opacity: 0.5;
+  padding: 8px 10px;
+  white-space: nowrap;
+}
+
+.dropdown li:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  transition: all 0.1s ease-in-out;
+  text-decoration: underline;
+  color: white;
+  background-color: black;
+}
+
+.collection,
+.bestsellers {
+  margin-bottom: 50px;
+  padding-top: 20px;
+}
+
+.collection > p,
+.bestsellers > p {
+  margin: 20px 0;
+  letter-spacing: 1px;
+  font-size: x-large;
+  text-align: center;
+  font-weight: 400;
+}
+
+.flex_collection {
+  gap: 20px;
+  padding: 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_collection1 {
+  gap: 20px;
+  padding: 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+}
+
+.snacks1,
+.mug1,
+.extras,
+.premium,
+.instant,
+.loose {
+  height: 247px;
+  width: 370px;
+  object-fit: cover;
+}
+
+.mug2,
+.snacks2,
+.extras1,
+.premium1,
+.instant1,
+.loose1 {
+  height: 247px;
+  width: 370px;
+  object-fit: fill;
+  display: none;
+}
+
+.img:hover .loose,
+.img:hover .instant,
+.img:hover .premium,
+.img:hover .extras,
+.img:hover .mug1,
+.img:hover .snacks1 {
+  display: none;
+}
+
+.img:hover .loose1,
+.img:hover .instant1,
+.img:hover .premium1,
+.img:hover .extras1,
+.img:hover .mug2,
+.img:hover .snacks2 {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.img {
+  border: 1px solid;
+}
+
+.class1 > p,
+.class2 > p,
+.class3 > p,
+.class4 > p,
+.class5 > p,
+.class6 > p {
+  font-size: medium;
+  font-weight: 500;
+  padding: 15px 0;
+}
+
+.cart_parent {
+  gap: 20px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex_collection1 {
+  gap: 50px;
+}
+
+.flex_collection1 .class1 .img1 .loose,
+.flex_collection1 .class1 .img1 .loose1,
+.flex_collection1 .class2 .img1 .instant,
+.flex_collection1 .class2 .img1 .instant1,
+.flex_collection1 .class3 .img1 .premium,
+.flex_collection1 .class3 .img1 .premium1,
+.flex_collection1 .class4 .img1 .extras,
+.flex_collection1 .class4 .img1 .extras1,
+.flex_collection1 .class5 .img1 .mug1,
+.flex_collection1 .class5 .img1 .mug2,
+.flex_collection1 .class6 .img1 .snacks1,
+.flex_collection1 .class6 .img1 .snacks2 {
+  height: 360px;
+  width: 370px;
+  object-fit: fill;
+}
+
+.img1:hover .loose1,
+.img1:hover .instant1,
+.img1:hover .premium1,
+.img1:hover .extras1,
+.img1:hover .mug2,
+.img1:hover .snacks2 {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.img1:hover .loose,
+.img1:hover .instant,
+.img1:hover .premium,
+.img1:hover .extras,
+.img1:hover .mug1,
+.img1:hover .snacks1 {
+  display: none;
+}
+
+.add_cart > p > a {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.add_cart > p {
+  font-size: 17px;
+}
+
+.cart_button {
+  font-size: medium;
+  font-weight: 600;
+  letter-spacing: 1px;
+  height: 40px;
+  width: 120px;
+  border: 1px transparent;
+  border-radius: 25px;
+  background-color: blue;
+  color: #fff;
 }
