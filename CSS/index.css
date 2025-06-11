@@ -301,6 +301,7 @@ span > p:hover {
 .class4 > p,
 .class5 > p,
 .class6 > p {
+  letter-spacing: 1px;
   font-size: medium;
   font-weight: 500;
   padding: 15px 0;
@@ -359,11 +360,13 @@ span > p:hover {
 }
 
 .add_cart > p {
+  letter-spacing: 1px;
   font-weight: normal;
   font-size: 17px;
 }
 
 .cart_button {
+  letter-spacing: 1px;
   font-size: medium;
   font-weight: 600;
   letter-spacing: 1px;
@@ -411,7 +414,7 @@ input::placeholder {
 
 .explore {
   font-weight: 600;
-  font-size: 15Spx;
+  font-size: 15px;
   border-radius: 30px;
   margin: 50px 650px;
   text-transform: uppercase;
@@ -676,6 +679,7 @@ hr {
   font-size: small;
   opacity: 0.7;
   padding: 20px 150px;
+  margin-bottom: 70px;
 }
 
 .hr1 {
@@ -690,7 +694,8 @@ hr {
   position: fixed;
   bottom: 0;
   left: 20px;
-  width: 200px;
+  width: 170px;
+  gap: 15px;
   height: 50px;
   /* border: 1px solid; */
   border-radius: 15px;
@@ -701,7 +706,7 @@ hr {
 }
 
 .miss > p {
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 600;
   text-align: center;
 }
@@ -719,8 +724,8 @@ hr {
   }
   .banner {
     position: static;
-    margin-top: 200px;
-    width: 400px;
+    margin-top: 240px;
+    width: 390px;
     height: 450px;
     background-size: cover;
   }
@@ -743,5 +748,86 @@ hr {
     width: 250px;
     font-size: larger;
     left: 60px;
+  }
+  .banner > button::before {
+    height: 24px;
+    width: 77px;
+  }
+  .class1 > p,
+  .class2 > p,
+  .class3 > p,
+  .class4 > p,
+  .class5 > p,
+  .class6 > p {
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+  }
+  .cart_button {
+    width: 130px;
+  }
+  input {
+    border: 1px solid;
+  }
+  .explore {
+    margin: 50px 80px;
+  }
+  video {
+    margin: 0 40px;
+    width: 310px;
+    height: 250px;
+    object-fit: contain;
+  }
+  .bright > h6 {
+    font-size: 23px;
+  }
+  .button > button {
+    width: 90px;
+    font-size: 13px;
+  }
+  .button > button:hover {
+    scale: 1;
+  }
+  .button:hover {
+    gap: 5px;
+  }
+  .button {
+    width: 350px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 0 20px;
+  }
+  .about {
+    padding: 15px;
+    flex-direction: column-reverse;
+  }
+  .text {
+    width: 100%;
+    margin: 30px 0;
+  }
+  .about > img {
+    width: 370px;
+    height: 270px;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 30px;
+  }
+  .button1 {
+    display: grid;
+    gap: 30px;
+    justify-items: center;
+    align-content: center;
+  }
+  .button1 > input {
+    width: 300px;
+  }
+  .button1 > button {
+    margin: 0;
+    height: 45px;
+  }
+  .copy {
+    padding: 30px;
   }
 }
