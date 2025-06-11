@@ -682,3 +682,66 @@ hr {
   margin: auto;
   border: 1px solid #dad8d8;
 }
+
+.miss {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 20px;
+  width: 200px;
+  height: 50px;
+  /* border: 1px solid; */
+  border-radius: 15px;
+  margin: 15px 0;
+  padding: 14px;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.miss > p {
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .profile,
+  .list > ul {
+    display: none;
+  }
+  .fixed {
+    position: relative;
+  }
+  nav {
+    justify-content: space-evenly;
+  }
+  .banner {
+    position: static;
+    margin-top: 200px;
+    width: 400px;
+    height: 450px;
+    background-size: cover;
+  }
+  .banner > p,
+  .banner > p > a {
+    font-size: 50px;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    left: 0;
+  }
+  .banner > p > a {
+    font-size: 70px;
+    top: 110px;
+  }
+  .banner > button {
+    right: auto;
+    top: 370px;
+    height: 75px;
+    width: 250px;
+    font-size: larger;
+    left: 60px;
+  }
+}
