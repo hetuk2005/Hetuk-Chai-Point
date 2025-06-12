@@ -241,7 +241,7 @@ span > p:hover {
 }
 
 .flex_collection1 {
-  gap: 20px;
+  gap: 50px;
   padding: 0 30px;
   display: flex;
   flex-wrap: wrap;
@@ -316,10 +316,6 @@ span > p:hover {
   margin: 15px 0;
   display: flex;
   justify-content: space-between;
-}
-
-.flex_collection1 {
-  gap: 50px;
 }
 
 .flex_collection1 .class1 .img1 .loose,
