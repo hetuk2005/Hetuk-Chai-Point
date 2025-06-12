@@ -39,10 +39,13 @@
                     </span>
                     <img src="./Utils/Search.svg" alt="Search" class="search">
                 </div>
+                <div class="ham">
+                    <img src="./Utils/Menu.svg" alt="Menu">
+                </div>
             </nav>
         </div>
         <div class="banner">
-            <p>Premium <br> Tea Bags <br><a>Sale</a></p>
+            <p>Premium Tea Bags <br><a>Tea Par Tea</a></p>
             <button>Flat 20% Off</button>
         </div>
         <div class="collection">
@@ -70,9 +73,9 @@
                 </div>
                 <div class="class3">
                     <div class="img">
-                        <img src="./Utils/Tea.webp" alt="Premium Tea"
+                        <img src="./Utils/RoseTea.webp" alt="Premium Tea"
                             class="premium">
-                        <img src="./Utils/Tea1.webp" alt="Premium Tea 1"
+                        <img src="./Utils/MintTea.webp" alt="Premium Tea 1"
                             class="premium1">
                     </div>
                     <p>Premium Tea</p>
@@ -139,7 +142,7 @@
                     </div>
                     <div class="cart_parent">
                         <div class="add_cart">
-                            <p>Assam Masala Tea (Pack Of 2)</p>
+                            <p>Assam Masala Tea (Pack<br> Of 2)</p>
                             <p>Rs. 530 <a>Rs. 600</a></p>
                         </div>
                         <button class="cart_button">Add To Cart</button>
@@ -202,7 +205,7 @@
                     </div>
                     <div class="cart_parent">
                         <div class="add_cart">
-                            <p>Tea Point Artisan Tea Collection</p>
+                            <p>Tea Point Artisan Tea<br> Collection</p>
                             <p>Rs. 680 <a>Rs. 748</a></p>
                         </div>
                         <button class="cart_button">Add To Cart</button>
@@ -291,8 +294,8 @@
                             class="mug2">
                     </div>
                     <div class="cart_parent">
-                        <p>Instant Ginger Tea - 10<br> Sachets</p>
-                        <p>Rs. 180 <a>Rs. 199</a></p>
+                        <p>Instant Ginger Tea - 10<br> Sachets<br> Rs. 180
+                            <a>Rs. 199</a></p>
                         <button class="cart_button">Add To Cart</button>
                     </div>
                 </div>
@@ -476,8 +479,15 @@
         <hr class="hr1">
         <p class="copy">© 2025 Chai Point Powered by Shopify</p>
         <div class="miss">
-            <p>Don't miss out</p>
-            <img src="./Utils/close.svg" alt="Close button">
+            <p>Don't Miss Out!</p>
+            <img src="./Utils/close.svg" alt="Close button"
+                id="closepopupbtn">
         </div>
     </body>
+    <script>
+        document.getElementById("closepopupbtn").addEventListener("click", function () {
+          document.querySelector(".miss").style.display = "none";
+        });
+      </script>
+
 </html>
