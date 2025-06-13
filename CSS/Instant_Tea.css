@@ -696,3 +696,143 @@ hr {
     gap: 50px;
   }
 }
+
+@media (max-width: 630px) {
+  .list > ul,
+  .profile,
+  .left {
+    display: none;
+  }
+  .fixed {
+    position: static;
+  }
+  nav {
+    justify-content: space-evenly;
+  }
+  .banner {
+    height: 500px;
+    padding: 0 5px;
+  }
+  .center {
+    padding: 120px 0;
+  }
+  .center:hover {
+    letter-spacing: 3px;
+    transition: all 0.1s ease-in-out;
+  }
+  .filter {
+    padding: 40px 15px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+  }
+  .child1 > p,
+  .child2 > p {
+    text-align: center;
+  }
+  select {
+    width: 99% !important;
+  }
+  option {
+    text-align: center;
+    font-weight: 600;
+  }
+  .cart_parent > .child1 > p {
+    text-align: left;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 30px;
+  }
+  .flex_collection1 .class1 .img1 .loose,
+  .flex_collection1 .class1 .img1 .loose1,
+  .flex_collection1 .class2 .img1 .instant,
+  .flex_collection1 .class2 .img1 .instant1,
+  .flex_collection1 .class3 .img1 .premium,
+  .flex_collection1 .class3 .img1 .premium1,
+  .flex_collection1 .class4 .img1 .extras,
+  .flex_collection1 .class4 .img1 .extras1,
+  .flex_collection1 .class5 .img1 .mug1,
+  .flex_collection1 .class5 .img1 .mug2,
+  .flex_collection1 .class6 .img1 .snacks1,
+  .flex_collection1 .class6 .img1 .snacks2 {
+    width: 350px;
+  }
+  .button1 {
+    display: grid;
+    gap: 30px;
+    justify-items: center;
+    align-content: center;
+  }
+  .image {
+    justify-content: start;
+  }
+  .image1 {
+    display: flex;
+  }
+  .button1 > input {
+    width: 300px;
+  }
+  .button1 > button {
+    margin: 0;
+    height: 45px;
+  }
+  .copy {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 631px) and (max-width: 840px) {
+  .list {
+    display: none;
+  }
+  .ham {
+    display: inline-block;
+  }
+  .fixed {
+    position: static;
+  }
+  .banner {
+    padding: 30px 20px;
+    height: 350px;
+  }
+  .center {
+    padding: 80px 0;
+  }
+  .center:hover {
+    letter-spacing: 3px;
+    transition: all 0.1s ease-in-out;
+  }
+  .filter {
+    margin: 40px 20px;
+    justify-content: center;
+  }
+  select {
+    width: 350px;
+  }
+  .flex_collection,
+  .flex_collection1 {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+  }
+  .class1 > p,
+  .class2 > p,
+  .class3 > p,
+  .class4 > p,
+  .class5 > p,
+  .class6 > p {
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+  }
+  .sub {
+    display: none;
+  }
+  .footer {
+    padding: 0 20px;
+    justify-content: start;
+    gap: 50px;
+  }
+}
