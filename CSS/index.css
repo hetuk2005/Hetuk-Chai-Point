@@ -300,6 +300,11 @@ span > p:hover {
   transition: all 0.1s ease-in-out;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .class1 > p,
 .class2 > p,
 .class3 > p,
