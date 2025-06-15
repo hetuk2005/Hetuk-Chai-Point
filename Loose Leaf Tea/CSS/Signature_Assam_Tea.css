@@ -447,20 +447,244 @@ hr {
 
 .customer_parent {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  border-bottom: 1px solid #f4f4f4;
+  margin: 0 70px;
+  padding: 20px 0;
 }
 
 .customer_child1 {
   display: flex;
-  align-items: last baseline;
+  align-items: center;
+  justify-content: center;
   gap: 5px;
+  border-right: 2px solid #f4f4f4;
+  padding: 0 50px;
+  width: 33%;
+  height: 200px;
 }
 
 .customer_child1 > .star {
   display: flex;
   justify-content: start;
   align-items: start;
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.rating-row:hover {
+  opacity: 0.7;
+}
+
+.bar {
+  background-color: #eee;
+  height: 14px;
+  width: 180px;
+  margin: 0 10px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.filled {
+  height: 100%;
+  background-color: #359a9e;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.count {
+  width: 20px;
+  text-align: right;
+  font-size: 14px;
+  color: #333;
+}
+
+.customer_child2 {
+  width: 37%;
+  border-right: 2px solid #f4f4f4;
+  padding: 0 50px;
+}
+
+.customer_child3 {
+  width: 35%;
+  padding: 0 100px;
+}
+
+.customer_child3 > button {
+  width: 230px;
+  font-size: large;
+  font-weight: 600;
+  border: 1px transparent;
+  border-radius: 3px;
+  height: 45px;
+  background-color: #359a9e;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.customer_child3 > button:hover {
+  opacity: 0.7;
+}
+
+.flex_collection1 {
+  gap: 50px;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+}
+
+.snacks1,
+.mug1,
+.premium,
+.extras,
+.instant,
+.loose,
+.mug2,
+.snacks2,
+.extras1,
+.premium1,
+.instant1,
+.loose1 {
+  height: 300px;
+  width: 370px;
+  object-fit: cover;
+}
+
+.premium,
+.premium1 {
+  object-fit: fill;
+}
+
+.mug2,
+.snacks2,
+.extras1,
+.premium1,
+.instant1,
+.loose1 {
+  display: none;
+}
+
+.img:hover .loose,
+.img:hover .instant,
+.img:hover .premium,
+.img:hover .extras,
+.img:hover .mug1,
+.img:hover .snacks1 {
+  display: none;
+}
+
+.img:hover .loose1,
+.img:hover .instant1,
+.img:hover .premium1,
+.img:hover .extras1,
+.img:hover .mug2,
+.img:hover .snacks2 {
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.1s ease-in-out;
+}
+
+.cart_parent {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex_collection1 .class1 .img1 .loose,
+.flex_collection1 .class1 .img1 .loose1,
+.flex_collection1 .class2 .img1 .instant,
+.flex_collection1 .class2 .img1 .instant1,
+.flex_collection1 .class3 .img1 .premium,
+.flex_collection1 .class3 .img1 .premium1,
+.flex_collection1 .class4 .img1 .extras,
+.flex_collection1 .class4 .img1 .extras1,
+.flex_collection1 .class5 .img1 .mug1,
+.flex_collection1 .class5 .img1 .mug2,
+.flex_collection1 .class6 .img1 .snacks1,
+.flex_collection1 .class6 .img1 .snacks2 {
+  height: 360px;
+  width: 370px;
+  object-fit: fill;
+}
+
+.img1:hover .loose1,
+.img1:hover .instant1,
+.img1:hover .premium1,
+.img1:hover .extras1,
+.img1:hover .mug2,
+.img1:hover .snacks2 {
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.1s ease-in-out;
+}
+
+.img1:hover .loose,
+.img1:hover .instant,
+.img1:hover .premium,
+.img1:hover .extras,
+.img1:hover .mug1,
+.img1:hover .snacks1 {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.child1 > p > a {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.cart_button {
+  letter-spacing: 1px;
+  font-size: medium;
+  font-weight: 600;
+  letter-spacing: 1px;
+  height: 40px;
+  width: 120px;
+  border: 1px transparent;
+  border-radius: 25px;
+  background-color: #000;
+  color: #fff;
+}
+
+.cart_button:hover {
+  background-color: blue;
+  cursor: pointer;
+  scale: 1.1;
+  transition: all 0.1s ease-in-out;
+}
+
+.flex_collection1 .class1,
+.flex_collection1 .class2,
+.flex_collection1 .class3,
+.flex_collection1 .class4,
+.flex_collection1 .class5,
+.flex_collection1 .class6 {
+  position: relative;
+}
+
+.sale {
+  border: 1px transparent;
+  width: 50px;
+  height: 23px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 13px;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 15px;
 }
 
 .footer {
