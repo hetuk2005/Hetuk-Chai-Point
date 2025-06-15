@@ -330,6 +330,11 @@ select > option {
   display: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .child1 > p > a {
   text-decoration: line-through;
   opacity: 0.5;
