@@ -412,6 +412,57 @@ hr {
   opacity: 1;
 }
 
+.pagination {
+  width: 200px;
+  position: relative;
+  left: 105px;
+  top: -30px;
+}
+
+.pagination > button {
+  border: 0;
+  text-align: center;
+  width: 65px;
+  height: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.pagination > button:hover {
+  scale: 1.05;
+  transition: all 0.1s ease-in-out;
+}
+
+.customer {
+  padding: 100px 0;
+}
+
+.customer > p {
+  text-align: center;
+  font-size: x-large;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.customer_parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customer_child1 {
+  display: flex;
+  align-items: last baseline;
+  gap: 5px;
+}
+
+.customer_child1 > .star {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
 .footer {
   display: flex;
   justify-content: space-around;
