@@ -149,13 +149,13 @@ span > p:hover {
 }
 
 .banner {
-  background-image: url(../../Utils/Banner3.webp);
+  background-image: url(../../Utils/Banner3.jpg);
   background-position: center;
   background-size: cover;
   height: 500px;
   width: 100%;
   cursor: pointer;
-  padding: 150px 50px;
+  padding: 150px 25px;
 }
 
 .left {
