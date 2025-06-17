@@ -53,10 +53,16 @@ span {
 }
 
 span > p,
-ul > li {
+ul > li,
+ul > a > li {
   font-weight: bold;
   font-size: 19px;
   list-style-type: none;
+}
+
+ul > a {
+  text-decoration: none;
+  color: #000;
 }
 
 .gray,
@@ -101,6 +107,51 @@ span > p:hover {
   height: 100px;
   width: 100px;
   object-fit: contain;
+}
+
+.ham {
+  display: none;
+}
+
+.gray {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  z-index: 100;
+  min-width: 200px;
+  border: 1px solid #333;
+  color: whitesmoke;
+}
+
+.gray:hover .dropdown,
+.dropdown:hover {
+  display: block;
+}
+
+.dropdown li {
+  font-weight: 600;
+  opacity: 0.6;
+  padding: 8px 15px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  transition: all 0.1s ease-in-out;
+  background-color: #fff;
+  text-decoration: underline;
+  color: #000;
 }
 
 .banner {

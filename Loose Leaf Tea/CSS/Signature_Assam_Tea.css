@@ -113,39 +113,45 @@ span > p:hover {
   display: none;
 }
 
+.gray {
+  position: relative;
+}
+
 .dropdown {
   display: none;
   position: absolute;
-  color: whitesmoke;
+  top: 100%;
+  left: 0;
   background-color: black;
   list-style: none;
   padding: 10px 0;
-  top: 95%;
-  right: 450px;
-  min-width: auto;
-  z-index: 1;
-  border: 1px transparent;
-  height: auto;
+  margin: 0;
+  z-index: 100;
+  min-width: 200px;
+  border: 1px solid #333;
+  color: whitesmoke;
 }
 
-.list ul li:hover .dropdown {
+.gray:hover .dropdown,
+.dropdown:hover {
   display: block;
 }
 
 .dropdown li {
   font-weight: 600;
-  opacity: 0.5;
-  padding: 8px 10px;
+  opacity: 0.6;
+  padding: 8px 15px;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .dropdown li:hover {
   opacity: 1;
   transform: scale(1.05);
   transition: all 0.1s ease-in-out;
+  background-color: #fff;
   text-decoration: underline;
-  color: white;
-  background-color: black;
+  color: #000;
 }
 
 .banner {
