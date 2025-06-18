@@ -453,7 +453,7 @@ hr {
 
 .customer_parent {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   border-bottom: 1px solid #f4f4f4;
   margin: 0 70px;
@@ -512,14 +512,9 @@ hr {
 }
 
 .customer_child2 {
-  width: 37%;
   border-right: 2px solid #f4f4f4;
+  margin: 70px 50px;
   padding: 0 50px;
-}
-
-.customer_child3 {
-  width: 35%;
-  padding: 0 100px;
 }
 
 .customer_child3 > button {
