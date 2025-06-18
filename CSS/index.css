@@ -788,7 +788,7 @@ hr {
   display: none;
 }
 
-@media (max-width: 630px) {
+@media (max-width: 430px) {
   .profile,
   .list > ul,
   .add_cart > p > br {
@@ -805,6 +805,7 @@ hr {
     width: 100%;
     height: 450px;
     background-size: cover;
+    padding: 70px 0;
   }
   .banner > p {
     font-size: 50px;
@@ -813,7 +814,7 @@ hr {
     font-size: 70px;
   }
   .banner > button {
-    margin: 0 40px;
+    margin: 0 70px;
     height: 55px;
     width: 200px;
     font-size: large;
@@ -821,6 +822,11 @@ hr {
   .cart_parent {
     flex-direction: column;
     gap: 20px;
+  }
+  .collection > a > p,
+  .bestsellers > a > p,
+  .redefine > a > p {
+    width: 100%;
   }
   .banner > button::before {
     width: 70px;
@@ -837,8 +843,9 @@ hr {
     font-weight: 600;
   }
   .cart_button {
-    width: 33%;
-    margin: 0 130px;
+    width: 50%;
+    margin: auto;
+    padding: 10px 15px;
     font-size: 15px;
   }
   .email {
@@ -847,8 +854,39 @@ hr {
   input {
     border: 1px solid;
   }
+  .snacks1,
+  .mug1,
+  .premium,
+  .extras,
+  .instant,
+  .loose,
+  .mug2,
+  .snacks2,
+  .extras1,
+  .premium1,
+  .instant1,
+  .loose1,
+  .flex_collection1 .class1 .img1 .loose,
+  .flex_collection1 .class1 .img1 .loose1,
+  .flex_collection1 .class2 .img1 .instant,
+  .flex_collection1 .class2 .img1 .instant1,
+  .flex_collection1 .class3 .img1 .premium,
+  .flex_collection1 .class3 .img1 .premium1,
+  .flex_collection1 .class4 .img1 .extras,
+  .flex_collection1 .class4 .img1 .extras1,
+  .flex_collection1 .class5 .img1 .mug1,
+  .flex_collection1 .class5 .img1 .mug2,
+  .flex_collection1 .class6 .img1 .snacks1,
+  .flex_collection1 .class6 .img1 .snacks2 {
+    width: 100%;
+  }
+  .flex_collection1 {
+    width: 100%;
+    padding-bottom: 50px;
+  }
   .explore {
-    margin: 40px 60px;
+    margin: auto;
+    margin-left: 60px;
     width: 70%;
   }
   video {
@@ -872,12 +910,13 @@ hr {
     gap: 5px;
   }
   .button {
-    width: 350px;
+    width: 90%;
     overflow-x: scroll;
     overflow-y: hidden;
     margin: 0 20px;
   }
   .about {
+    width: 100%;
     padding: 15px;
     flex-direction: column-reverse;
   }
@@ -890,7 +929,7 @@ hr {
     margin: 30px 0;
   }
   .about > img {
-    width: 370px;
+    width: 100%;
     height: 270px;
   }
   .add_cart {
@@ -900,6 +939,7 @@ hr {
     flex-direction: column;
     gap: 30px;
     padding: 0 30px;
+    width: 100%;
   }
   .button1 {
     display: grid;
@@ -927,12 +967,15 @@ hr {
     margin: auto;
     width: 100%;
   }
+  .customer > p {
+    font-size: larger;
+  }
   .redefine > .flex_collection1 > .class5 > .cart_parent > p {
     text-align: center;
   }
 }
 
-@media (min-width: 631px) and (max-width: 840px) {
+@media (min-width: 431px) and (max-width: 840px) {
   .list {
     display: none;
   }
