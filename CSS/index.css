@@ -681,13 +681,13 @@ hr {
   gap: 40px;
 }
 
-.image > img {
+.tooltip > img {
   opacity: 0.5;
   height: 30px;
   width: 30px;
 }
 
-.image > img:hover {
+.tooltip > img:hover {
   opacity: 1;
   scale: 1.1;
   transition: all 0.1s ease-in-out;
@@ -786,6 +786,44 @@ hr {
 
 .ham {
   display: none;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltext {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media (max-width: 430px) {
