@@ -295,10 +295,8 @@ span > p:hover {
 
 .parent_child3 {
   width: 50%;
-  height: 833px;
+  height: auto;
   /* border: 1px solid; */
-  overflow-x: scroll;
-  scrollbar-width: none;
   padding: 20px 30px;
 }
 
@@ -1048,61 +1046,188 @@ a {
   }
 }
 
-@media (min-width: 681px) and (max-width: 1340px) {
-  .customer {
-    width: 100%;
+@media (min-width: 431px) and (max-width: 840px) {
+  .list,
+  .pagination,
+  .text {
+    display: none;
   }
-  .footer {
-    width: 100%;
-    gap: 20px;
-    justify-content: center;
-    padding: 0 20px;
+  .ham {
+    display: inline-block;
   }
-  .button1 {
+  .fixed {
+    position: static;
+  }
+  .banner {
+    padding: 20px;
+    height: 300px;
+  }
+
+  .parent {
+    padding: 0;
+    flex-direction: column;
+  }
+  .parent_child1,
+  .parent_child1_1 {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
     height: auto;
-    padding: 15px 50px;
+    justify-content: space-between;
+    padding: 5px;
+    padding-top: 10px;
   }
-  .button1 > input {
-    border: 1px solid;
+  .imagebox {
+    width: 790px;
+    height: 60vh;
   }
-  .button1 > button {
-    margin: 20px;
+  .parent_child3 > p {
+    font-size: 23px;
+  }
+  .parent_child3 > ul > li {
+    font-size: 23px;
+  }
+  .big,
+  .parent_child3 > button,
+  .only {
+    font-size: 27px;
+  }
+  .hr_2 {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .imagebox1 {
+    width: 210px;
+    height: auto;
+  }
+  .imagebox > img {
+    width: inherit;
+    height: 60vh;
+    object-fit: cover;
+  }
+  .imagebox1 > img {
+    width: inherit;
+    height: auto;
+    object-fit: fill;
+  }
+  .parent_child2,
+  .parent_child {
+    height: auto;
+    width: 100%;
+    height: auto;
+    padding: 0 5px;
+    gap: 7px;
+  }
+  .parent_child3 {
+    width: 100%;
+    height: auto;
   }
   .customer {
     padding: 50px 0;
   }
   .customer_parent {
-    width: 100%;
-    justify-content: start;
-    margin: 0;
+    margin: 0 10px;
   }
-  .customer_child1,
-  .customer_child2 {
-    padding: 0 30px;
-  }
+  .customer_child2,
   .customer_child3 {
-    padding: 0 10px;
+    padding: 0 20px;
   }
-  .like > p {
-    margin: 0;
-    margin-bottom: 30px;
+  .customer_child1 {
+    padding: 0 5px;
   }
   .rating-row > .stars > img {
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
   }
   .bar {
-    width: 130px;
-    height: 10px;
+    width: 80px;
+  }
+  .like > p {
+    margin: 30px 0;
+  }
+  .flex_collection1 {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    gap: 20px;
+  }
+  .sub {
+    display: none;
+  }
+  .footer {
+    padding: 0 20px;
+    justify-content: start;
+    gap: 50px;
+  }
+}
+
+@media (min-width: 841px) and (max-width: 1340px) {
+  body {
+    overflow-x: hidden;
+  }
+  * {
+    box-sizing: border-box;
   }
   .parent {
-    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 10px;
   }
   .parent_child1_1 {
-    width: 37%;
+    width: 20%;
   }
-  .parent_child2,
   .parent_child {
+    width: 50%;
+  }
+  .parent_child3 {
+    flex: 1 1 25%;
+    width: 250px;
+  }
+  .pagination {
+    top: -120px;
+    left: 45px;
+  }
+  .hr_2 {
+    width: 85%;
+    margin-top: 30px;
+  }
+  .customer {
+    padding: 0;
+  }
+  .customer_parent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 10px;
+  }
+  .customer_child1,
+  .customer_child2,
+  .customer_child3 {
+    flex: 1 1 300px;
+    width: 280px;
+    padding: 0;
+  }
+  .flex_collection1 {
+    justify-content: start;
+  }
+  .button1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 20px;
+    justify-content: center;
+  }
+  .button1 > input,
+  .button1 > button {
     width: 100%;
+  }
+  .footer {
+    gap: 20px;
+    padding: 0 20px;
+  }
+  .bar {
+    width: 100%;
+    max-width: 130px;
   }
 }
