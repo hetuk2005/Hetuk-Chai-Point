@@ -1047,3 +1047,23 @@ a {
     padding: 30px;
   }
 }
+@media (min-width: 431px) and (max-width: 840px) {
+  .list,
+  .left,
+  .pagination {
+    display: none;
+  }
+  .ham {
+    display: inline-block;
+  }
+  .fixed {
+    position: static;
+  }
+  .banner {
+    padding: 30px 20px;
+    height: 350px;
+  }
+  .parent {
+    flex-direction: column;
+  }
+}

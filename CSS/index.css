@@ -1036,3 +1036,44 @@ hr {
     gap: 50px;
   }
 }
+@media (min-width: 841px) and (max-width: 1340px) {
+  nav {
+    width: 100%;
+    justify-content: left;
+    gap: 100px;
+    /* border: 1px solid red; */
+  }
+  .banner > button {
+    margin: 0 280px;
+  }
+  .explore {
+    margin: 30px 400px;
+  }
+  video {
+    margin: 0 30px;
+    width: 964px;
+  }
+  .about {
+    width: 100%;
+  }
+  .about > img {
+    width: 50%;
+  }
+  .footer {
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  .button1 {
+    height: auto;
+    padding: 15px 50px;
+  }
+  .cart_parent > input,
+  .button1 > input {
+    border: 1px solid;
+  }
+  .button1 > button {
+    margin: 20px;
+  }
+}
