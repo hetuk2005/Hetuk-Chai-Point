@@ -1118,6 +1118,9 @@ hr {
 }
 
 @media (min-width: 1341px) and (max-width: 1440px) {
+  .customer > br {
+    display: none;
+  }
   .explore {
     margin: 50px 0;
     margin-left: 650px;
@@ -1132,6 +1135,15 @@ hr {
   }
   .text {
     margin: 20px 0;
+  }
+  .customer > h6 {
+    text-align: center;
+  }
+  .customer > .star {
+    margin-top: 15px;
+  }
+  .customer > p {
+    padding: 15px 0;
   }
 }
 
