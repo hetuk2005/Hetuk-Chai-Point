@@ -1115,3 +1115,47 @@ hr {
     margin: 20px;
   }
 }
+
+@media (min-width: 1341px) and (max-width: 2559px) {
+  .banner {
+    width: 100%;
+  }
+  .customer > h6 {
+    text-align: center;
+  }
+  .banner > button {
+    margin: 0;
+    margin-left: 500px;
+  }
+  video {
+    margin: 0;
+    margin-left: 200px;
+  }
+  .explore {
+    margin: 50px 0;
+    margin-left: 650px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .customer > h6 {
+    text-align: center;
+  }
+  .banner {
+    width: 100%;
+  }
+  .banner > button {
+    margin: 0;
+    margin-left: 1050px;
+  }
+  video {
+    margin: 0;
+    margin-left: 600px;
+    width: 1500px;
+    height: auto;
+  }
+  .explore {
+    margin: 50px 0;
+    margin-left: 1250px;
+  }
+}
