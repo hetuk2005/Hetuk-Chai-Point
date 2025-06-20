@@ -1074,6 +1074,7 @@ hr {
     gap: 50px;
   }
 }
+
 @media (min-width: 841px) and (max-width: 1340px) {
   nav {
     width: 100%;
@@ -1115,6 +1116,25 @@ hr {
     margin: 20px;
   }
 }
+
+@media (min-width: 1341px) and (max-width: 1440px) {
+  .explore {
+    margin: 50px 0;
+    margin-left: 650px;
+  }
+  video {
+    margin: 0;
+    margin-left: 230px;
+  }
+  .banner > button {
+    margin: 0;
+    margin-left: 480px;
+  }
+  .text {
+    margin: 20px 0;
+  }
+}
+
 @media (min-width: 2560px) {
   .customer > h6 {
     text-align: center !important;
