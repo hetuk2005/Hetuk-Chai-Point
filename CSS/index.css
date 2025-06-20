@@ -826,7 +826,195 @@ hr {
   opacity: 1;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 320px) {
+  .profile,
+  .list > ul,
+  .add_cart > p > br {
+    display: none;
+  }
+  .fixed {
+    position: relative;
+  }
+  nav {
+    justify-content: space-evenly;
+  }
+  .banner {
+    position: static;
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    padding: 70px 0;
+  }
+  .banner > p {
+    font-size: 50px;
+  }
+  .banner > p > a {
+    font-size: 70px;
+  }
+  .banner > button {
+    margin: 0;
+    margin-left: 70px;
+    height: 55px;
+    width: 200px;
+    font-size: large;
+  }
+  .cart_parent {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .collection > a > p,
+  .bestsellers > a > p,
+  .redefine > a > p {
+    width: 100%;
+  }
+  .banner > button::before {
+    width: 70px;
+    height: 20px;
+  }
+  .class1 > p,
+  .class2 > p,
+  .class3 > p,
+  .class4 > p,
+  .class5 > p,
+  .class6 > p {
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+  }
+  .cart_button {
+    width: 50%;
+    margin: auto;
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+  .email {
+    height: 50px;
+  }
+  input {
+    border: 1px solid;
+  }
+  .snacks1,
+  .mug1,
+  .premium,
+  .extras,
+  .instant,
+  .loose,
+  .mug2,
+  .snacks2,
+  .extras1,
+  .premium1,
+  .instant1,
+  .loose1,
+  .flex_collection1 .class1 .img1 .loose,
+  .flex_collection1 .class1 .img1 .loose1,
+  .flex_collection1 .class2 .img1 .instant,
+  .flex_collection1 .class2 .img1 .instant1,
+  .flex_collection1 .class3 .img1 .premium,
+  .flex_collection1 .class3 .img1 .premium1,
+  .flex_collection1 .class4 .img1 .extras,
+  .flex_collection1 .class4 .img1 .extras1,
+  .flex_collection1 .class5 .img1 .mug1,
+  .flex_collection1 .class5 .img1 .mug2,
+  .flex_collection1 .class6 .img1 .snacks1,
+  .flex_collection1 .class6 .img1 .snacks2 {
+    width: 100%;
+  }
+  .flex_collection1 {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .explore {
+    margin: auto;
+    margin-left: 60px;
+    width: 70%;
+  }
+  video {
+    margin: auto;
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    padding: 0 15px;
+  }
+  .bright > h6 {
+    font-size: 23px;
+  }
+  .button > button {
+    width: 90px;
+    font-size: 13px;
+  }
+  .button > button:hover {
+    scale: 1;
+  }
+  .button:hover {
+    gap: 5px;
+  }
+  .button {
+    width: 90%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 0 20px;
+  }
+  .about {
+    width: 100%;
+    padding: 15px;
+    flex-direction: column-reverse;
+  }
+  .bestsellers > a > p {
+    width: 100%;
+    font-size: larger;
+  }
+  .text {
+    width: 100%;
+    margin: 30px 0;
+  }
+  .about > img {
+    width: 100%;
+    height: 270px;
+  }
+  .add_cart {
+    text-align: center;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 30px;
+    width: 100%;
+  }
+  .button1 {
+    display: grid;
+    gap: 30px;
+    justify-items: center;
+    align-content: center;
+  }
+  .image {
+    justify-content: start;
+  }
+  .image1 {
+    display: grid;
+  }
+  .button1 > input {
+    width: 270px;
+  }
+  .button1 > button {
+    margin: 0;
+    height: 45px;
+  }
+  .copy {
+    padding: 30px;
+  }
+  .customer {
+    margin: auto;
+    width: 100%;
+  }
+  .customer > p {
+    font-size: larger;
+  }
+  .redefine > .flex_collection1 > .class5 > .cart_parent > p {
+    text-align: center;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 430px) {
   .profile,
   .list > ul,
   .add_cart > p > br {
