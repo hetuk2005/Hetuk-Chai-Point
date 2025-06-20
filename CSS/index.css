@@ -1049,12 +1049,13 @@ hr {
     height: 60px;
     width: 225px;
     font-size: 17px;
-    margin: 50px 300px;
+    margin: 50px 0;
+    margin-left: 300px;
   }
   video {
     height: 450px;
-    width: 787px;
-    margin: 0 20px;
+    width: 93%;
+    margin: 0 25px;
   }
   .bright > p {
     font-size: 18px;
@@ -1072,6 +1073,9 @@ hr {
     padding: 0 20px;
     justify-content: start;
     gap: 50px;
+  }
+  .explore1 {
+    width: 80%;
   }
 }
 
