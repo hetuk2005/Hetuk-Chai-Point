@@ -1278,20 +1278,30 @@ a {
     padding: 0;
     flex-direction: column;
   }
-  .parent_child1,
-  .parent_child1_1 {
+  .parent_child1 {
     display: flex;
     width: 100%;
+    height: auto;
     overflow-x: scroll;
     overflow-y: hidden;
-    height: auto;
     justify-content: space-between;
     padding: 5px;
     padding-top: 10px;
   }
+  .parent_child1_1 {
+    display: flex;
+    width: 100%;
+    height: inherit;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    justify-content: space-between;
+    padding: 5px;
+    padding-top: 10px;
+    height: 130vh;
+  }
   .imagebox {
     width: 790px;
-    height: 60vh;
+    height: inherit;
   }
   .parent_child3 > p {
     font-size: 23px;
@@ -1314,8 +1324,8 @@ a {
   }
   .imagebox > img {
     width: inherit;
-    height: 60vh;
-    object-fit: cover;
+    height: inherit;
+    object-fit: contain;
   }
   .imagebox1 > img {
     width: inherit;
@@ -1348,8 +1358,8 @@ a {
     padding: 0 5px;
   }
   .rating-row > .stars > img {
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
     object-fit: contain;
   }
   .bar {
@@ -1370,6 +1380,9 @@ a {
     padding: 0 20px;
     justify-content: start;
     gap: 50px;
+  }
+  .only {
+    padding: 0 20px;
   }
 }
 
