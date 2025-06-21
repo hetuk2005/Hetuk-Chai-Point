@@ -808,7 +808,7 @@ hr {
   .flex_collection1 {
     gap: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 0fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .class1 > p,
   .class2 > p,

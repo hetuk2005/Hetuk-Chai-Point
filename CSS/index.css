@@ -1215,13 +1215,14 @@ hr {
     font-size: 77px;
   }
   .banner > button {
-    margin: 0 180px;
+    margin: 0 auto;
+    display: block;
   }
   .flex_collection,
   .flex_collection1 {
     gap: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 0fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .class1 > p,
   .class2 > p,
@@ -1237,13 +1238,14 @@ hr {
     height: 60px;
     width: 225px;
     font-size: 17px;
-    margin: 50px 0;
-    margin-left: 300px;
+    margin: 50px auto;
+    /* margin-left: 300px; */
   }
   video {
     height: 450px;
     width: 93%;
-    margin: 0 25px;
+    margin: 0;
+    margin-left: 25px;
   }
   .bright > p {
     font-size: 18px;
