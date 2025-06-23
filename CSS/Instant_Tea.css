@@ -777,6 +777,11 @@ hr {
 }
 
 @media (min-width: 431px) and (max-width: 840px) {
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
   .list {
     display: none;
   }

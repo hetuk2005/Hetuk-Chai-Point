@@ -1202,6 +1202,11 @@ hr {
 }
 
 @media (min-width: 431px) and (max-width: 840px) {
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
   .list {
     display: none;
   }
@@ -1239,6 +1244,7 @@ hr {
     width: 225px;
     font-size: 17px;
     margin: 50px auto;
+    display: block;
     /* margin-left: 300px; */
   }
   video {
@@ -1255,6 +1261,9 @@ hr {
   }
   .about > img {
     width: 50%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
   }
   .sub {
     display: none;
